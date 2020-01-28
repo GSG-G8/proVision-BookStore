@@ -1,0 +1,25 @@
+{
+  "name": "proVision-BookStore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "coverage":"jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G8/proVision-BookStore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G8/proVision-BookStore/issues"
+  },
+  "homepage": "https://github.com/GSG-G8/proVision-BookStore#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.0",
+    "jest": "^25.1.0"
+  }
+}
