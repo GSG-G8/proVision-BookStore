@@ -1,5 +1,15 @@
 const add = document.getElementById("addBook");
 add.addEventListener("click", showProduct);
+let showForm = document.getElementById('showAdd');
+let addForm= document.getElementById('add');
+let hideForm = document.getElementById('hideForm');
+showForm.addEventListener('click', function(){
+  addForm.style.display='block';
+})
+
+hideForm.addEventListener('click',function(){
+  addForm.style.display='none'; })
+
 
 function showProduct() {
   const namePro = document.getElementById("product-name").value;
@@ -37,3 +47,7 @@ function showProduct() {
     alert("empty input not allowed");
   }
 }
+
+let searchInput= document.getElementById('search');
+searchInput.addEventListener('keyup',search);
+
