@@ -1,10 +1,13 @@
 let functions = require("./js/main");
 let testingtest = functions.testingtest;
 let addItem = functions.addItem;
+<<<<<<< HEAD
+=======
 let search = functions.search;
 let filterPrice = functions.filterPrice;
 let filterCat = functions.filterCat;
 let updateLocoalStorage = functions.updateLocoalStorage;
+>>>>>>> 8528a084ebfbc0857c7dedeb3bd821b830140310
 
 describe("this is to check that test works well", () => {
   test("return 10 when given 5", () => {

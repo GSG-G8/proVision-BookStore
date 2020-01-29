@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<<<<<<< HEAD
+<coverage generated="1580286436280" clover="3.2.0">
+  <project timestamp="1580286436281" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="3" elements="22" coveredelements="20" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
+    <file name="main.js" path="/home/hassan/Desktop/proVision-BookStore/js/main.js">
+      <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="3"/>
+=======
+<coverage generated="1580288069202" clover="3.2.0">
+  <project timestamp="1580288069202" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2" elements="10" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="main.js" path="/home/ahmedsafi/Desktop/proVision-BookStore/js/main.js">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+>>>>>>> 988272cd8009a0a5423932275430f311307842bc
+=======
 <coverage generated="1580297228851" clover="3.2.0">
   <project timestamp="1580297228851" name="All files">
     <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="8" elements="19" coveredelements="18" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
     <file name="main.js" path="/home/linaebeid/proVision-BookStore/js/main.js">
       <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="8"/>
+>>>>>>> 8528a084ebfbc0857c7dedeb3bd821b830140310
       <line num="5" count="1" type="stmt"/>
       <line num="11" count="3" type="stmt"/>
       <line num="12" count="3" type="stmt"/>
