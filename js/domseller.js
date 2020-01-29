@@ -61,14 +61,21 @@ function load(){
     <p>${proArr[i].details}</p>
     <span>${proArr[i].price}</span>
     <span>${proArr[i].category}</span><br />
-    <button class="products__sec-dlt" type="button">
+    <button id="delt${i}" class="products__sec-dlt" type="button">
       Delete products
     </button>
     <button class="products__sec-edit" type="button">
       Edit products
     </button>`
-    
+
+    let delte= document.getElementById(`delt${i}`);
+    delte.addEventListener('click', function(event){
+      event.target.parentElement.remove();
+    })
+
   }
+
+   
 }
 load();
 
