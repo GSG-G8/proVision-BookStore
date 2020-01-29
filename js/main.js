@@ -21,29 +21,29 @@ function addItem(items, name, details, price, category, URL) {
   return [...items, obj];
 }
 
-function search(arr,txt) {
-  return arr.filter(e => e.name==txt);
+function search(arr, txt) {
+  let newItems = arr.filter(element => {
+    let replace = txt;
+    let searchInput = new RegExp(txt, "g");
+    let text = element.name + element.detalis;
+    return searchInput.test(text);
+  });
+  return newItems;
 }
 
-
-function filterPrice(arr,price){
-    return arr.filter(e => e.price <= price);
-
+function filterPrice(arr, price) {
+  return arr.filter(e => e.price <= price);
 }
-function filterCat(arr,cat){
-    return arr.filter(e => e.category == cat);
-
+function filterCat(arr, cat) {
+  return arr.filter(e => e.category == cat);
 }
-
 
 if (typeof exports !== "undefined") {
   module.exports = {
     testingtest: testingtest,
     addItem: addItem,
     search: search,
-    filterPrice : filterPrice,
-    filterCat : filterCat
+    filterPrice: filterPrice,
+    filterCat: filterCat
   };
 }
-
-

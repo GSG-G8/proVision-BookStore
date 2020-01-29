@@ -16,13 +16,15 @@
         <li>
           <label for="search">Search product</label>
           <input id="search" type="search" />
+          <button id="searchButton">Go</button>
         </li>
       </ul>
     </nav>
     <main>
+      <br />
       <form id="add" class="addproduct">
         <label for="product-name">Product Name</label><br />
-        <input type="text" id="product-name" required/><br />
+        <input type="text" id="product-name" required /><br />
         <label for="product-detailes">Product Detailes</label><br />
         <input type="text" id="product-detailes" /><br />
         <label for="product-price">Product Price</label><br />
@@ -40,13 +42,10 @@
         <button id="hideForm" type="button">Hide adding form</button>
       </form>
 
-      <section id="products" class="products">
-      </section>
+      <section id="products" class="products"></section>
     </main>
 
     <script src="./js/main.js"></script>
     <script src="./js/domseller.js"></script>
-  
   </body>
 </html>
-
