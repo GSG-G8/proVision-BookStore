@@ -2,7 +2,6 @@
 let functions = require("./js/main");
 let testingtest = functions.testingtest;
 let addItem = functions.addItem;
-let updateLocoalStorage = functions.updateLocoalStorage;
 
 describe("this is to check that test works well", () => {
   test("return 10 when given 5", () => {

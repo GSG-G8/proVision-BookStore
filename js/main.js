@@ -15,7 +15,7 @@ function addItem(items, name, details, price, category, URL) {
     details,
     price,
     category,
-    URL
+    URL,
   };
   // updateLocoalStorage(obj);
   return [...items, obj];
