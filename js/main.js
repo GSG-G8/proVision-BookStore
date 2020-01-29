@@ -33,8 +33,7 @@ if (!JSON.parse(localStorage.getItem("product"))) {
 }
 
 function updateLocoalStorage(obj){
-    let localUpdate = [...product,obj];
-    localStorage.setItem("product", JSON.stringify(localUpdate));
+    localStorage.setItem("product", JSON.stringify([...product,obj]));
 }
 
 if (typeof exports !== "undefined") {
