@@ -30,6 +30,7 @@ main{
 
 .addproduct{
 text-align: center;
+display: none;
 }
 
 .addproduct input{
