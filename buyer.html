@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>proVision-BookStore</title>
-    <link rel="stylesheet" href="./css/buyer.css">
-</head>
-<body>
-<nav class="nav">
-    <img src="./assets/images/logo.png" alt="proVisionBookStore" class="nav__logo nav--image-size">
-    <section class="nav__search">
+    <link rel="stylesheet" href="./css/buyer.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <img
+        src="./assets/images/logo.png"
+        alt="proVisionBookStore"
+        class="nav__logo nav--image-size"
+      />
+      <section class="nav__search">
         <select name="" id="" class="nav__search-filter">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
         </select>
-        <input type="text" class="nav__search-input">
-        <a href="#"><img src="./assets/images/search.png" alt="" class="nav__search-img"></a>
-
-    </section>
-    <section class="nav__right-sectin">
-        <a id="gotocart"><img src="./assets/images/cart.png" alt="cart" class="nav__right-sectin-cart nav--image-size" ></a>
-        <a href="./index.html"><img src="./assets/images/home.png" alt="home" class="nav__right-sectin-home nav--image-size"></a>
-    </section>
-</nav>
-<section class="products">
-    <section class="products__prod">
-        <img src="./assets/images/test.jpeg" alt="product image" class="products__prod-img">
-        <h3 class="products__prod-name">name product</h3>
-        <p class="products__prod-price">20$</p>  
-        <button class="products__button-add">add to cart</button>
-    </section>
-</section>
-<section class="cart" id="cart">
+        <input type="text" class="nav__search-input" />
+        <a href="#"
+          ><img src="./assets/images/search.png" alt="" class="nav__search-img"
+        /></a>
+      </section>
+      <section class="nav__right-sectin">
+        <img
+          src="./assets/images/cart.png"
+          alt="cart"
+          class="nav__right-sectin-cart nav--image-size"
+          id="gotocart"
+        />
+        <a href="./index.html"
+          ><img
+            src="./assets/images/home.png"
+            alt="home"
+            class="nav__right-sectin-home nav--image-size"
+        /></a>
+      </section>
+    </nav>
     <section class="products">
-        <section class="products__prod">
-            <img src="./assets/images/test.jpeg" alt="product image" class="products__prod-img">
-            <h3 class="products__prod-name">name product</h3>
-            <p class="products__prod-price">20$</p>  
-            <button class="products__button-add">add to cart</button>
-        </section>
+      <section class="products__prod">
+        <img
+          src="./assets/images/test.jpeg"
+          alt="product image"
+          class="products__prod-img"
+        />
+        <h3 class="products__prod-name">name product</h3>
+        <p class="products__prod-price">20$</p>
+        <button class="products__button-add">add to cart</button>
+      </section>
     </section>
-</section>
-</body>
+
+    <!-- cart -->
+    <section class="cart" id="cart">
+      <img src="./assets/images/cancle.png" alt="cancel" class="cart__cancel" />
+      <h2 class="cart__name">My Cart</h2>
+      <section class="products">
+
+      </section>
+      <button class="products__button-add">check all</button>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

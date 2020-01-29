@@ -35,7 +35,9 @@ nav {
 }
 .logoImg {
   width: 40px;
+  margin: 0.3rem 0.9rem;
   animation: logTran 3s infinite;
+  align-self: center;
 }
 @keyframes logTran {
   0% {
