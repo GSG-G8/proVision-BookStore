@@ -1,15 +1,15 @@
 const add = document.getElementById("addBook");
 add.addEventListener("click", showProduct);
-let showForm = document.getElementById('showAdd');
-let addForm= document.getElementById('add');
-let hideForm = document.getElementById('hideForm');
-showForm.addEventListener('click', function(){
-  addForm.style.display='block';
-})
+let showForm = document.getElementById("showAdd");
+let addForm = document.getElementById("add");
+let hideForm = document.getElementById("hideForm");
+showForm.addEventListener("click", function() {
+  addForm.style.display = "block";
+});
 
-hideForm.addEventListener('click',function(){
-  addForm.style.display='none'; })
-
+hideForm.addEventListener("click", function() {
+  addForm.style.display = "none";
+});
 
 function showProduct() {
   const namePro = document.getElementById("product-name").value;
@@ -42,12 +42,26 @@ function showProduct() {
     document.getElementById("product-price").value = "";
     document.getElementById("product-image").value = "";
     document.getElementById("product-category").value = "";
-    document.getElementById("products").insertAdjacentHTML('afterbegin',item);
+    document.getElementById("products").insertAdjacentHTML("afterbegin", item);
   } else {
     alert("empty input not allowed");
   }
 }
 
-let searchInput= document.getElementById('search');
-searchInput.addEventListener('keyup',search);
+// const searchInput = document.getElementById("search");
+// const searchButton = document.getElementById('searchButton');
+// searchButton.addEventListener("click", searchBy);
 
+// function searchBy() {
+//   let txt = searchInput.value;
+//   let arr = JSON.parse(localStorage.getItem("product"));
+//   let newItems = search(arr, txt);
+//   arr.forEach(element => {
+//     document.getElementById(element.id).setAttribute("style", "display: none;");
+//   });
+//   newItems.forEach(element => {
+//     document
+//       .getElementById(element.id)
+//       .setAttribute("style", "display: block;");
+//   });
+// }

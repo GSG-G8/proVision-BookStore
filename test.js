@@ -33,16 +33,24 @@ describe("check if user inputs are stored in objects or not", ()=> {
 });
 
 
-describe("search function to return the product with the value of search input name",()=>{
-  test("should return [{price : 7,name : `book1`}] when search for book1 ", ()=>{
-    let actual= search([{price : 7,name : "book1"},{price : 5,name : "book2"},{price : 15,name : "book"
-    }], "book1");
-    let expected= [{price : 7,name : "book1"}];
+describe("search function to return the product with the value of search input name or detalis",() => {
+  test("should return [{}] ", ()=>{
+    let actual= search([{"URL": "URL", "category": "Science", "details": "nice book", "id": 0, "name": "Einstein universe", "price": "25"}],"Einstein");
+    let expected = [{"URL": "URL", "category": "Science", "details": "nice book", "id": 0, "name": "Einstein universe", "price": "25"}];
     expect(actual).toEqual(expected);
+  });
+  test("should return []", ()=>{
+    let actual= search([{"URL": "URL", "category": "Science", "details": "nice book", "id": 0, "name": "Einstein universe", "price": "25"}],"Ahmed");
+    let expected = [];
+    expect(actual).toEqual(expected);
+  });
+  test("should return [{}]", ()=>{
+    let actual= search([{"URL": "a", "category": "mystery", "details": "a", "id": 0, "name": "a", "price": "4"}],"a");
+    let expected = [{"URL": "a", "category": "mystery", "details": "a", "id": 0, "name": "a", "price": "4"}];
+    expect(actual).toEqual(expected);
+  });
 
-  } )
-
-})
+});
 
 describe("filter arrays product by price", ()=>{
   test("filter objects by price less than 10" , ()=>{
@@ -60,3 +68,5 @@ describe("filter arrays by category" , ()=>{
     expect(actual).toEqual(expected)
   })
 })
+
+
