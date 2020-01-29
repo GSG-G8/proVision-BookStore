@@ -48,6 +48,30 @@ function showProduct() {
   }
 }
 
+function load(){
+  let proSecP=document.getElementById('products')
+  let proArr = JSON.parse(localStorage.getItem("product"));
+  for(let i=0; i<proArr.length; i++){
+  let secProduct= document.createElement('section');
+  secProduct.classList.add('products__sec');
+  secProduct.id= proArr[i].id;
+  proSecP.appendChild(secProduct);
+    secProduct.innerHTML=`<img src=${proArr[i].URL} alt="book"/>
+    <h2>${proArr[i].name}</h2>
+    <p>${proArr[i].details}</p>
+    <span>${proArr[i].price}</span>
+    <span>${proArr[i].category}</span><br />
+    <button class="products__sec-dlt" type="button">
+      Delete products
+    </button>
+    <button class="products__sec-edit" type="button">
+      Edit products
+    </button>`
+    
+  }
+}
+load();
+
 let searchInput= document.getElementById('search');
 searchInput.addEventListener('keyup',search);
 
