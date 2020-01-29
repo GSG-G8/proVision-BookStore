@@ -6,20 +6,9 @@ function testingtest(x) {
 }
 
 //define variables and get elements from locoal storage
-let product = JSON.parse(localStorage.getItem("product"));
-if (!product) {
-    product = [];
-}
 
-function addItem(name, details, price, category, URL) {
-let id;
-if (!JSON.parse(localStorage.getItem("product"))) {
-         id = 0;
-      }
-    else{
-        id = JSON.parse(localStorage.getItem("product")).length;
-    }
-  
+function addItem(items, name, details, price, category, URL) {
+  let id = items.length;
   let obj = {
     id,
     name,
@@ -28,19 +17,15 @@ if (!JSON.parse(localStorage.getItem("product"))) {
     category,
     URL
   };
-  updateLocoalStorage(obj);
-  return obj;
+  // updateLocoalStorage(obj);
+  return [...items, obj];
 }
 
-function updateLocoalStorage(obj){
-    localStorage.setItem("product", JSON.stringify([...product,obj]));
-}
 
 if (typeof exports !== "undefined") {
   module.exports = {
     testingtest: testingtest,
-    addItem: addItem,
-    updateLocoalStorage: updateLocoalStorage
+    addItem: addItem
   };
 }
 
