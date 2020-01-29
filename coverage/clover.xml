@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1580280530315" clover="3.2.0">
-  <project timestamp="1580280530315" name="All files">
+<coverage generated="1580286436280" clover="3.2.0">
+  <project timestamp="1580286436281" name="All files">
     <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="3" elements="22" coveredelements="20" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
-    <file name="main.js" path="/home/ahmedsafi/Desktop/proVision-BookStore/js/main.js">
+    <file name="main.js" path="/home/hassan/Desktop/proVision-BookStore/js/main.js">
       <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="3"/>
       <line num="5" count="1" type="stmt"/>
       <line num="9" count="1" type="stmt"/>
