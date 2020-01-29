@@ -12,6 +12,3 @@ function backToProduct(){
     cart.style.display = "none";
     products.style.display = "flex";
 };
-window.onclick = e => {
-  console.log(e.target.innerText);
-} 
