@@ -54,6 +54,9 @@ function showProduct() {
 function load() {
   let proSecP = document.getElementById("products");
   let proArr = JSON.parse(localStorage.getItem("product"));
+  if(!proArr){
+    proArr = [];
+  }
   for (let i = 0; i < proArr.length; i++) {
     let secProduct = document.createElement("section");
     secProduct.classList.add("products__sec");
