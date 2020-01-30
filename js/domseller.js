@@ -1,11 +1,11 @@
-//load Items
-load();
+
 
 const add = document.getElementById("addBook");
+const showForm = document.getElementById("showAdd");
+const addForm = document.getElementById("add");
+const hideForm = document.getElementById("hideForm");
+const products = document.getElementById("products");
 add.addEventListener("click", showProduct);
-let showForm = document.getElementById("showAdd");
-let addForm = document.getElementById("add");
-let hideForm = document.getElementById("hideForm");
 showForm.addEventListener("click", function() {
   addForm.style.display = "block";
 });
@@ -45,23 +45,22 @@ function showProduct() {
     document.getElementById("product-price").value = "";
     document.getElementById("product-image").value = "";
     document.getElementById("product-category").value = "";
-    document.getElementById("products").insertAdjacentHTML("afterbegin", item);
+    products.insertAdjacentHTML("afterbegin", item);
   } else {
     alert("empty input not allowed");
   }
 }
 
 function load() {
-  let proSecP = document.getElementById("products");
   let proArr = JSON.parse(localStorage.getItem("product"));
-  if(!proArr){
+  if (!proArr) {
     proArr = [];
   }
   for (let i = 0; i < proArr.length; i++) {
     let secProduct = document.createElement("section");
     secProduct.classList.add("products__sec");
     secProduct.id = proArr[i].id;
-    proSecP.appendChild(secProduct);
+    products.appendChild(secProduct);
     secProduct.innerHTML = `<img src=${proArr[i].URL} alt="book"/>
     <h2>${proArr[i].name}</h2>
     <p>${proArr[i].details}</p>
@@ -81,19 +80,4 @@ function load() {
   }
 }
 
-// const searchInput = document.getElementById("search");
-// const searchButton = document.getElementById('searchButton');
-// searchButton.addEventListener("click", searchBy);
-// function searchBy() {
-//   let txt = searchInput.value;
-//   let arr = JSON.parse(localStorage.getItem("product"));
-//   let newItems = search(arr, txt);
-//   arr.forEach(element => {
-//     document.getElementById(element.id).setAttribute("style", "display: none;");
-//   });
-//   newItems.forEach(element => {
-//     document
-//       .getElementById(element.id)
-//       .setAttribute("style", "display: block;");
-//   });
-// }
+load();
