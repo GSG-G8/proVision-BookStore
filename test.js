@@ -1,16 +1,10 @@
 let functions = require("./js/main");
-let testingtest = functions.testingtest;
 let addItem = functions.addItem;
 let search = functions.search;
 let filterPrice = functions.filterPrice;
 let filterCat = functions.filterCat;
 
 
-describe("this is to check that test works well", () => {
-  test("return 10 when given 5", () => {
-    expect(testingtest(5)).toBe(10);
-  });
-});
 
 describe("check if user inputs are stored in objects or not", () => {
   test("should return arr [{id 0}]", () => {
