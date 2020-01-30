@@ -1,5 +1,3 @@
-
-
 const add = document.getElementById("addBook");
 const showForm = document.getElementById("showAdd");
 const addForm = document.getElementById("add");
@@ -14,14 +12,13 @@ hideForm.addEventListener("click", function() {
   addForm.style.display = "none";
 });
 
-const namePro = document.getElementById("product-name").value;
+function showProduct() {
+  const namePro = document.getElementById("product-name").value;
   const detPro = document.getElementById("product-detailes").value;
   const pricePro = document.getElementById("product-price").value;
   const imgPro = document.getElementById("product-image").value;
   const catPro = document.getElementById("product-category").value;
 
-function showProduct() {
-  
   let product = JSON.parse(localStorage.getItem("product"));
   if (!product) {
     product = [];
