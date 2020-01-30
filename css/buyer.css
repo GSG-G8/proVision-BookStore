@@ -60,6 +60,10 @@
     flex-direction: column;
     align-items: center;
 }
+.products__prod-img{
+    width: 300px;
+    height: 300px;
+}
 .products__prod-name{
     font-size: 1.2rem;
     padding-bottom: 1rem;

@@ -15,7 +15,6 @@ function addItem(items, name, details, price, category, URL) {
 
 function search(arr, txt) {
   let newItems = arr.filter(element => {
-    let replace = txt;
     let searchInput = new RegExp(txt, "g");
     let text = element.name + element.detalis;
     return searchInput.test(text);
