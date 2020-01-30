@@ -1,12 +1,5 @@
 "use strict";
 
-// testingtest function
-function testingtest(x) {
-  return x * 2;
-}
-
-//define variables and get elements from locoal storage
-
 function addItem(items, name, details, price, category, URL) {
   let id = items.length;
   let obj = {
@@ -17,7 +10,6 @@ function addItem(items, name, details, price, category, URL) {
     category,
     URL,
   };
-  // updateLocoalStorage(obj);
   return [...items, obj];
 }
 
@@ -40,7 +32,6 @@ function filterCat(arr, cat) {
 
 if (typeof exports !== "undefined") {
   module.exports = {
-    testingtest: testingtest,
     addItem: addItem,
     search: search,
     filterPrice: filterPrice,
