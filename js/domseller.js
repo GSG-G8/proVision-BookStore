@@ -12,6 +12,7 @@ hideForm.addEventListener("click", function() {
   addForm.style.display = "none";
 });
 
+
 function showProduct() {
   const namePro = document.getElementById("product-name").value;
   const detPro = document.getElementById("product-detailes").value;
